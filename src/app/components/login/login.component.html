@@ -1,0 +1,22 @@
+  <div class="container">
+    <div class="col-lg-12" >
+   <!-- <div class="col-lg-6 ">
+   <img src="../../../assets/image/draw2.webp" alt="" style="height:350px;margin-left:100; margin-top: 80px;" >
+   </div> -->
+   <div class="col-lg-6 " id="hover" style="border :1px solid; border-radius: 20px; margin-top: 100px ;margin-left:25%; background-color: rgb(246, 248, 247);">
+      <h4 class="text-center" style="margin-top: 80px; margin-left:10px ;font-family: 'Times New Roman', Times, serif;" >Sign In With</h4 > <a href="https://www.facebook.com/" ><i class="fa fa-facebook-square" id="facebook"></i></a>  <a href="" ><i class="fa fa-twitter-square" id="fb"></i></a>  <a href="https://www.linkedin.com/in/omkar-ambi-/51043023b/" ><i class="fa fa-linkedin-square" id="fb"></i></a>
+
+        <br>
+        <input type="text" placeholder="Enter Email" class="form-control" [(ngModel)]="email">
+
+        <br>
+        <input type="password" placeholder="Enter Password" class="form-control" [(ngModel)]="password">
+        <br>
+        <button type="submit" value="submit" class="btn  btn-primary" style="margin-left:20%; margin-bottom: 10px;" (click)="login()" >Login </button>
+         <a style="margin-left: 100px;" href="">Forgot Password ?</a>
+
+   </div>
+  </div>
+  </div>
+<ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" type = "square-jelly-box" [fullScreen] = "true"><p style="color: white" > Loading... </p></ngx-spinner>
+

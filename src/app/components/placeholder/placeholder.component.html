@@ -1,0 +1,39 @@
+
+      <ngx-skeleton-loader count="50" appearance="line" *ngIf="loader"> </ngx-skeleton-loader>
+      <div class="container">
+  <table>
+    <tr>
+      <th><ngx-skeleton-loader count="5" appearance="line" [theme]="{height : '40px'}" *ngIf="loader">
+    </ngx-skeleton-loader></th>
+    <th><ngx-skeleton-loader count="5" appearance="line" [theme]="{height : '40px'}" *ngIf="loader">
+    </ngx-skeleton-loader></th>
+    <th><ngx-skeleton-loader count="5" appearance="line" [theme]="{height : '40px'}" *ngIf="loader">
+    </ngx-skeleton-loader></th>
+    <th><ngx-skeleton-loader count="5" appearance="line" [theme]="{height : '40px'}" *ngIf="loader">
+    </ngx-skeleton-loader></th>
+  </table>
+
+
+     <table class="table-bordered "  *ngIf="!loader">
+       <tr >
+         <th>Id</th>
+         <th>Title</th>
+         <th>Image</th>
+         <th>Price</th>
+         <th>Category</th>
+         <th>Discription</th>
+       </tr>
+      <tr *ngFor="let p of products ">
+       <td>{{ p.id}}</td>
+       <td>{{ p.title}}</td>
+       <td> <img src="{{ p.image}}" alt="" style="height: 50px;"> </td>
+
+       <td>{{ p.price }}</td>
+       <td>{{ p.category}}</td>
+       <td>{{ p.description}}</td>
+
+      </tr>
+     </table>
+
+   </div>
+

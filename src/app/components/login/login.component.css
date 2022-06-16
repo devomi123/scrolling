@@ -1,0 +1,23 @@
+#fb{
+  font-size: 40px;
+  margin-left: 30px;
+
+}
+#facebook {
+  font-size: 40px;
+  margin-left: 35%;
+}
+
+.form-control{
+ width: 59%;
+ margin-left: 20%;
+ margin-top: 20px;
+}
+.d-flex{
+  margin-top: 100px;
+}
+
+
+body{
+  background-color: dimgrey;
+}
